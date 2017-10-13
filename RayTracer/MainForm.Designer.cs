@@ -34,6 +34,7 @@
             this.StatusBar = new System.Windows.Forms.StatusStrip();
             this.StatusText = new System.Windows.Forms.ToolStripStatusLabel();
             this.RenderedImage = new System.Windows.Forms.PictureBox();
+            this.Render1000Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuBar.SuspendLayout();
             this.StatusBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RenderedImage)).BeginInit();
@@ -71,7 +72,8 @@
             this.RenderMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Render100Menu,
             this.Render250Menu,
-            this.Render500Menu});
+            this.Render500Menu,
+            this.Render1000Menu});
             this.RenderMenu.Name = "RenderMenu";
             this.RenderMenu.Size = new System.Drawing.Size(56, 20);
             this.RenderMenu.Text = "Render";
@@ -79,7 +81,7 @@
             // Render100Menu
             // 
             this.Render100Menu.Name = "Render100Menu";
-            this.Render100Menu.Size = new System.Drawing.Size(121, 22);
+            this.Render100Menu.Size = new System.Drawing.Size(152, 22);
             this.Render100Menu.Tag = "100";
             this.Render100Menu.Text = "100 x 100";
             this.Render100Menu.Click += new System.EventHandler(this.RenderMenu_Click);
@@ -87,7 +89,7 @@
             // Render250Menu
             // 
             this.Render250Menu.Name = "Render250Menu";
-            this.Render250Menu.Size = new System.Drawing.Size(121, 22);
+            this.Render250Menu.Size = new System.Drawing.Size(152, 22);
             this.Render250Menu.Tag = "250";
             this.Render250Menu.Text = "250 x 250";
             this.Render250Menu.Click += new System.EventHandler(this.RenderMenu_Click);
@@ -95,10 +97,18 @@
             // Render500Menu
             // 
             this.Render500Menu.Name = "Render500Menu";
-            this.Render500Menu.Size = new System.Drawing.Size(121, 22);
+            this.Render500Menu.Size = new System.Drawing.Size(152, 22);
             this.Render500Menu.Tag = "500";
             this.Render500Menu.Text = "500 x 500";
             this.Render500Menu.Click += new System.EventHandler(this.RenderMenu_Click);
+            // 
+            // Render1000Menu
+            // 
+            this.Render1000Menu.Name = "Render1000Menu";
+            this.Render1000Menu.Size = new System.Drawing.Size(152, 22);
+            this.Render1000Menu.Tag = "1000";
+            this.Render1000Menu.Text = "1000 x 1000";
+            this.Render1000Menu.Click += new System.EventHandler(this.RenderMenu_Click);
             // 
             // SceneMenu
             // 
@@ -165,5 +175,6 @@
         private System.Windows.Forms.ToolStripMenuItem Render500Menu;
         private System.Windows.Forms.ToolStripStatusLabel StatusText;
         private System.Windows.Forms.ToolStripMenuItem SceneMenu;
+        private System.Windows.Forms.ToolStripMenuItem Render1000Menu;
     }
 }

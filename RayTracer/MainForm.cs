@@ -81,5 +81,10 @@ namespace RayTracer {
         private Bitmap _bitmap;
         private SceneList _scenes;
         private string _selectedScene;
+
+        private void Render1000Menu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
