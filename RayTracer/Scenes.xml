@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scenes>
+  <Scene name="Two balls">
+    <Things>
+      <Plane norm="0,1,0" offset="0" surface="CheckerBoard" />
+      <Sphere center="0,1,0" radius="1" surface="Shiny" />
+      <Sphere center="-1,.5,1.5" radius=".5" surface="Shiny" />
+    </Things>
+    <Lights>
+      <Light pos="-2,2.5,0" color=".49,.07,.07" />
+      <Light pos="1.5,2.5,1.5" color=".07,.07,.49" />
+      <Light pos="1.5,2.5,-1.5" color=".07,.49,.071" />
+      <Light pos="0,3.5,0" color=".21,.21,.35" />
+    </Lights>
+    <Camera pos="3, 2, 4" lookAt="-1, .5, 0" />
+  </Scene>
+  <Scene name="Three balls">
+    <Things>
+      <Plane norm="0,1,0" offset="0" surface="CheckerBoard" />
+      <Sphere center="-0.5,0.4,1" radius=".2" surface="Shiny" />
+      <Sphere center="0,1,0" radius=".5" surface="Shiny" />
+      <Sphere center="-1,.5,1.5" radius=".5" surface="NonShiny" />
+    </Things>
+    <Lights>
+      <Light pos="-2,2.5,0" color="1,0,0" />
+      <Light pos="1.5,2.5,1.5" color="0,1,0" />
+      <Light pos="1.5,2.5,-1.5" color="0,0,1" />
+    </Lights>
+    <Camera pos="3, 2, 4" lookAt="-1, .5, 0" />
+  </Scene>
+</Scenes>
